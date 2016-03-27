@@ -41,6 +41,7 @@ curl "https://api.rocketleaguestats.com/v1/player?unique_id=76561198033338223&pl
   },
   "avatar": "http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/56/560e94689827bbdba66d34511de14e2442a5a786_full.jpg",
   "profileUrl": "https://rocketleaguestats.com/profile/Steam/76561198033338223",
+  "signatureUrl": "http://signature.rocketleaguestats.com/normal/Steam/76561198033338223.png",
   "stats": {
     "wins": 177,
     "goals": 492,
@@ -91,11 +92,11 @@ curl "https://api.rocketleaguestats.com/v1/player?unique_id=76561198033338223&pl
       }
     }
   },
-  "lastRequested": 1459015763,
-  "createdAt": 1456421065,
-  "updatedAt": 1459010274,
-  "nextUpdateAt": 1459013874,
-  "updatedInfoAt": 1458970651
+  "lastRequested": 1459095218,
+  "createdAt": 1456424665,
+  "updatedAt": 1459093964,
+  "nextUpdateAt": 1459097564,
+  "updatedInfoAt": 1459061514
 }
 ```
 
@@ -111,8 +112,20 @@ A player exists will only be stored when he has one or more goals. This is our o
 
 Parameter | Description
 --------- | ---------
-unique_id | Steam 64 ID / PSN Username / Xbox GamerTag
+unique_id | Steam 64 ID / PSN Username / Xbox GamerTag or XUID
 platform_id | The platform id. Ids can be found in the [platform data call](#platforms).
+
+### Extra information regarding xbox
+
+When you request an xbox user, the first request can be a bit slow when requesting by `gamertag`.
+
+The API we use to receive `xuid` from `gamertag` is a bit slow. The `xuid` be cached for 6 hours after that.
+
+If you received a player object when requesting by `gamertag`, you should use the `uniqueId` (`xuid`) field for future calls instead of the `gamertag`. This saves you at least **2 seconds** if the `xuid` is not cached but the user is stored.
+
+<aside class="notice">
+Did you know that <code>xuid</code> stands for <strong>Xbox User ID</strong>?
+</aside>
 
 ## Search Players
 
