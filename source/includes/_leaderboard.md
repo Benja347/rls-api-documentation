@@ -30,6 +30,12 @@ curl "https://api.rocketleaguestats.com/v1/leaderboard/stat?type=wins" \
 
 Retrieves an array of 100 players sorted by their specified stat amount.
 
+### HTTP Request
+
+`GET https://api.rocketleaguestats.com/v1/leaderboard/stat`
+
+### Query Parameters
+
 Parameter | Description
 --------- | ---------
 type | `wins` / `goals` / `mvps` / `saves` / `shots` / `assists`

@@ -93,7 +93,7 @@ curl "https://api.rocketleaguestats.com/v1/data/playlists" \
 
 This endpoint retrieves playlist data.
 
-At the moment only returns player count for:
+At the moment only returns the following playlists:
 
  * Duel
  * Doubles
