@@ -11,7 +11,7 @@ If a particular `seasonId` does not exist, that means the player hasn't particip
 Field | Information
 --------- | ---------
 rankedSeasons>tier | Tier name can be found in the [tier data call](#tiers).
-rankedSeasons>division | Division is this number + 1.
+rankedSeasons>division | Division is 0 when tier is also 0 (Unranked).
 
 **The following fields can be null:**
 
