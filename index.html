@@ -275,7 +275,7 @@ You must replace <code>api_key</code> with your personal API key.
 
 <p>This endpoint retrieves playlist data.</p>
 
-<p>At the moment only returns player count for:</p>
+<p>At the moment only returns the following playlists:</p>
 
 <ul>
 <li>Duel</li>
@@ -341,7 +341,7 @@ You must replace <code>api_key</code> with your personal API key.
 </tr>
 <tr>
 <td>rankedSeasons&gt;division</td>
-<td>Division is this number + 1.</td>
+<td>Division is 0 when tier is also 0 (Unranked).</td>
 </tr>
 </tbody></table>
 
@@ -570,6 +570,12 @@ Did you know that <code>xuid</code> stands for <strong>Xbox User ID</strong>?
 </code></pre>
 
 <p>Retrieves an array of 100 players sorted by their specified stat amount.</p>
+
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">GET https://api.rocketleaguestats.com/v1/leaderboard/stat</code></p>
+
+<h3 id="query-parameters">Query Parameters</h3>
 
 <table><thead>
 <tr>
