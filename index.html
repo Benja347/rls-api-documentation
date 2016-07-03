@@ -483,13 +483,54 @@ You must replace <code>api_key</code> with your personal API key.
 
 <p>When you request an xbox user, the first request can be a bit slow when requesting by <code class="prettyprint">gamertag</code>.</p>
 
-<p>The API we use to receive <code class="prettyprint">xuid</code> from <code class="prettyprint">gamertag</code> is a bit slow. The <code class="prettyprint">xuid</code> be cached for 6 hours after that.</p>
+<p>The API we use to receive <code class="prettyprint">xuid</code> from <code class="prettyprint">gamertag</code> is a bit slow.</p>
 
-<p>If you received a player object when requesting by <code class="prettyprint">gamertag</code>, you should use the <code class="prettyprint">uniqueId</code> (<code class="prettyprint">xuid</code>) field for future calls instead of the <code class="prettyprint">gamertag</code>. This saves you at least <strong>2 seconds</strong> if the <code class="prettyprint">xuid</code> is not cached but the user is stored.</p>
+<p>If you received a player object when requesting by <code class="prettyprint">gamertag</code>, you should use the <code class="prettyprint">uniqueId</code> (<code class="prettyprint">xuid</code>) field for future calls instead of the <code class="prettyprint">gamertag</code>. This saves you at least <strong>1 seconds</strong> if the <code class="prettyprint">xuid</code> is not cached but the user is stored.</p>
 
 <aside class="notice">
 Did you know that <code>xuid</code> stands for <strong>Xbox User ID</strong>?
 </aside>
+
+<h2 id="batch-players">Batch Players</h2>
+
+<blockquote>
+<p>This call works a bit different, you need to send a <code class="prettyprint">POST</code> request with the header <code class="prettyprint">Authorization: Bearer api_key</code>. Put the following in the body.</p>
+</blockquote>
+<pre class="highlight json"><code><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="nt">"platformId"</span><span class="p">:</span><span class="s2">"1"</span><span class="p">,</span><span class="w"> </span><span class="nt">"uniqueId"</span><span class="p">:</span><span class="s2">"76561198033338223"</span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="nt">"platformId"</span><span class="p">:</span><span class="s2">"1"</span><span class="p">,</span><span class="w"> </span><span class="nt">"uniqueId"</span><span class="p">:</span><span class="s2">"76561197981122126"</span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="nt">"platformId"</span><span class="p">:</span><span class="s2">"3"</span><span class="p">,</span><span class="w"> </span><span class="nt">"uniqueId"</span><span class="p">:</span><span class="s2">"Loubleezy"</span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="nt">"platformId"</span><span class="p">:</span><span class="s2">"2"</span><span class="p">,</span><span class="w"> </span><span class="nt">"uniqueId"</span><span class="p">:</span><span class="s2">"Wizwonk"</span><span class="p">}</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span></code></pre>
+
+<blockquote>
+<p>The response is a json array of all found players using the <a href="#single-player">player</a> object.</p>
+</blockquote>
+
+<p>You may only request 10 players at a time. If a player is not found, it will be excluded from the response.</p>
+
+<h3 id="http-request">HTTP Request</h3>
+
+<p><code class="prettyprint">POST https://api.rocketleaguestats.com/v1/player/batch</code></p>
+
+<h3 id="json-parameters">Json Parameters</h3>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>uniqueId</td>
+<td>Steam 64 ID / PSN Username / Xbox GamerTag or XUID</td>
+</tr>
+<tr>
+<td>platformId</td>
+<td>The platform id. Ids can be found in the <a href="#platforms">platform data call</a>.</td>
+</tr>
+</tbody></table>
 
 <h2 id="search-players">Search Players</h2>
 <pre class="highlight shell"><code>curl <span class="s2">"https://api.rocketleaguestats.com/v1/search/players?display_name=Mike"</span> <span class="se">\</span>
