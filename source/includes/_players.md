@@ -119,13 +119,41 @@ platform_id | The platform id. Ids can be found in the [platform data call](#pla
 
 When you request an xbox user, the first request can be a bit slow when requesting by `gamertag`.
 
-The API we use to receive `xuid` from `gamertag` is a bit slow. The `xuid` be cached for 6 hours after that.
+The API we use to receive `xuid` from `gamertag` is a bit slow.
 
-If you received a player object when requesting by `gamertag`, you should use the `uniqueId` (`xuid`) field for future calls instead of the `gamertag`. This saves you at least **2 seconds** if the `xuid` is not cached but the user is stored.
+If you received a player object when requesting by `gamertag`, you should use the `uniqueId` (`xuid`) field for future calls instead of the `gamertag`. This saves you at least **1 seconds** if the `xuid` is not cached but the user is stored.
 
 <aside class="notice">
 Did you know that <code>xuid</code> stands for <strong>Xbox User ID</strong>?
 </aside>
+
+## Batch Players
+
+> This call works a bit different, you need to send a `POST` request with the header `Authorization: Bearer api_key`. Put the following in the body.
+
+```json
+[
+    {"platformId":"1", "uniqueId":"76561198033338223"},
+    {"platformId":"1", "uniqueId":"76561197981122126"},
+    {"platformId":"3", "uniqueId":"Loubleezy"},
+    {"platformId":"2", "uniqueId":"Wizwonk"}
+]
+```
+
+> The response is a json array of all found players using the [player](#single-player) object.
+
+You may only request 10 players at a time. If a player is not found, it will be excluded from the response.
+
+### HTTP Request
+
+`POST https://api.rocketleaguestats.com/v1/player/batch`
+
+### Json Parameters
+
+Parameter | Description
+--------- | ---------
+uniqueId | Steam 64 ID / PSN Username / Xbox GamerTag or XUID
+platformId | The platform id. Ids can be found in the [platform data call](#platforms).
 
 ## Search Players
 
