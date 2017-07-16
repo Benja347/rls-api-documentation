@@ -6,7 +6,7 @@ These calls should be used to get specific data which you should then store for 
 
 ```shell
 curl "https://api.rocketleaguestats.com/v1/data/platforms" \
-  -H "Authorization: Bearer api_key"
+  -H "Authorization: api_key"
 ```
 
 ```json
@@ -36,7 +36,7 @@ This endpoint retrieves platform data.
 
 ```shell
 curl "https://api.rocketleaguestats.com/v1/data/seasons" \
-  -H "Authorization: Bearer api_key"
+  -H "Authorization: api_key"
 ```
 
 ```json
@@ -66,7 +66,7 @@ The `endedOn` property is `null` when a season hasn't ended yet.
 
 ```shell
 curl "https://api.rocketleaguestats.com/v1/data/playlists" \
-  -H "Authorization: Bearer api_key"
+  -H "Authorization: api_key"
 ```
 
 ```json
@@ -105,6 +105,9 @@ At the moment only returns the following playlists:
  * Ranked Standard
  * Snow Day
  * Rocket Labs
+ * Hoops
+ * Rumble
+ * Dropshot
 
 ### HTTP Request
 
@@ -114,7 +117,7 @@ At the moment only returns the following playlists:
 
 ```shell
 curl "https://api.rocketleaguestats.com/v1/data/tiers" \
-  -H "Authorization: Bearer api_key"
+  -H "Authorization: api_key"
 ```
 
 ```json
@@ -133,7 +136,7 @@ curl "https://api.rocketleaguestats.com/v1/data/tiers" \
 
 This endpoint retrieves tier data.
 
-Returns all season 2 tiers.
+Returns all season 5 tiers.
 
 ### HTTP Request
 

@@ -1,10 +1,9 @@
 # Libraries
 
-Official libraries are still being worked on.
+These are official libraries provided by the developer of RocketLeagueStats.
 
-These are available right now but may not be ready for use yet. Please contribute if possible.
-
- * [NodeJS](https://github.com/RocketLeagueStats/rls-api-lib-nodejs)
+ * [CSharp](https://github.com/RocketLeagueStats/rls-api-csharp)
+ * [NodeJS](https://github.com/RocketLeagueStats/rls-api-nodejs)
 
 ## Unofficial Libraries
 

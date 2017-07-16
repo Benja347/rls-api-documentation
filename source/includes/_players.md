@@ -6,29 +6,29 @@ You can view an example of a single player response [here](#single-player).
 
 The `rankedSeasons` field works like this: `rankedSeasons.seasonId.playlistId`
 
-If a particular `seasonId` does not exist, that means the player hasn't participated yet.
+If a particular `seasonId` does not exist, that means the player hasn't participated in that season yet.
 
 Field | Information
 --------- | ---------
-rankedSeasons>tier | Tier name can be found in the [tier data call](#tiers).
-rankedSeasons>division | Division is 0 when tier is also 0 (Unranked).
+rankedSeasons.tier | Tier name can be found in the [tier data call](#tiers).
+rankedSeasons.division | Division is 0 when tier is also 0 (Unranked).
 
 **The following fields can be null:**
 
 Field | When
 --------- | ---------
-avatar | An avatar could not be found for this user. Always for PS4 users and when Steam gives an invalid response to us, this is mostly fixed in the next platform-specific update.
-rankedSeasons>rankPoints | Not played in this specific playlist.
-rankedSeasons>matchesPlayed | Not played in this specific playlist.
-rankedSeasons>tier | Not played in this specific playlist.
-rankedSeasons>division | Not played in this specific playlist.
+avatar | An avatar could not be found for this user.
+rankedSeasons.rankPoints | Not played in this specific playlist.
+rankedSeasons.matchesPlayed | Not played in this specific playlist.
+rankedSeasons.tier | Not played in this specific playlist.
+rankedSeasons.division | Not played in this specific playlist.
 updatedInfoAt | When there have been no platform-specific updates for this user.
 
 ## Single Player
 
 ```shell
 curl "https://api.rocketleaguestats.com/v1/player?unique_id=76561198033338223&platform_id=1" \
-  -H "Authorization: Bearer api_key"
+  -H "Authorization: api_key"
 ```
 
 ```json
@@ -43,12 +43,12 @@ curl "https://api.rocketleaguestats.com/v1/player?unique_id=76561198033338223&pl
   "profileUrl": "https://rocketleaguestats.com/profile/Steam/76561198033338223",
   "signatureUrl": "http://signature.rocketleaguestats.com/normal/Steam/76561198033338223.png",
   "stats": {
-    "wins": 177,
-    "goals": 492,
-    "mvps": 70,
-    "saves": 252,
-    "shots": 1050,
-    "assists": 167
+    "wins": 674,
+    "goals": 2215,
+    "mvps": 344,
+    "saves": 881,
+    "shots": 4339,
+    "assists": 607
   },
   "rankedSeasons": {
     "1": {
@@ -65,38 +65,37 @@ curl "https://api.rocketleaguestats.com/v1/player?unique_id=76561198033338223&pl
         "rankPoints": 517
       }
     },
-    "2": {
+    "5": {
       "10": {
+        "rankPoints": 706,
+        "matchesPlayed": 27,
+        "tier": 8,
+        "division": 2
+      },
+      "11": {
+        "rankPoints": 809,
+        "matchesPlayed": 17,
+        "tier": 10,
+        "division": 0
+      },
+      "12": {
         "rankPoints": 557,
-        "matchesPlayed": 15,
+        "matchesPlayed": 12,
         "tier": 6,
         "division": 1
       },
-      "11": {
-        "rankPoints": 744,
-        "matchesPlayed": 137,
-        "tier": 8,
-        "division": 1
-      },
-      "12": {
-        "rankPoints": 708,
-        "matchesPlayed": 44,
-        "tier": 7,
-        "division": 3
-      },
       "13": {
-        "rankPoints": 660,
-        "matchesPlayed": 10,
-        "tier": 7,
-        "division": 1
+        "rankPoints": 776,
+        "matchesPlayed": 39,
+        "tier": 9,
+        "division": 2
       }
     }
   },
-  "lastRequested": 1459095218,
+  "lastRequested": 1500170066,
   "createdAt": 1456424665,
-  "updatedAt": 1459093964,
-  "nextUpdateAt": 1459097564,
-  "updatedInfoAt": 1459061514
+  "updatedAt": 1500170054,
+  "nextUpdateAt": 1500170234
 }
 ```
 
@@ -129,7 +128,7 @@ Did you know that <code>xuid</code> stands for <strong>Xbox User ID</strong>?
 
 ## Batch Players
 
-> This call works a bit different, you need to send a `POST` request with the header `Authorization: Bearer api_key`. Put the following in the body.
+> This call works a bit different, you need to send a `POST` request with the header `Authorization: api_key`. Put the following in the body.
 
 ```json
 [
@@ -159,7 +158,7 @@ platformId | The platform id. Ids can be found in the [platform data call](#plat
 
 ```shell
 curl "https://api.rocketleaguestats.com/v1/search/players?display_name=Mike" \
-  -H "Authorization: Bearer api_key"
+  -H "Authorization: api_key"
 ```
 
 > The `data` field contains an array of [player](#single-player) objects.
