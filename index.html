@@ -9,81 +9,190 @@
     <style>
       .highlight table td { padding: 5px; }
 .highlight table pre { margin: 0; }
-.highlight, .highlight .w {
-  color: #f8f8f2;
-  background-color: #272822;
-}
-.highlight .err {
-  color: #151515;
-  background-color: #ac4142;
-}
-.highlight .c, .highlight .cd, .highlight .cm, .highlight .c1, .highlight .cs {
-  color: #505050;
-}
-.highlight .cp {
-  color: #f4bf75;
-}
-.highlight .nt {
-  color: #f4bf75;
-}
-.highlight .o, .highlight .ow {
-  color: #d0d0d0;
-}
-.highlight .p, .highlight .pi {
-  color: #d0d0d0;
-}
-.highlight .gi {
-  color: #90a959;
-}
-.highlight .gd {
-  color: #ac4142;
-}
 .highlight .gh {
-  color: #6a9fb5;
-  background-color: #151515;
-  font-weight: bold;
-}
-.highlight .k, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kv {
-  color: #aa759f;
-}
-.highlight .kc {
-  color: #d28445;
-}
-.highlight .kt {
-  color: #d28445;
-}
-.highlight .kd {
-  color: #d28445;
-}
-.highlight .s, .highlight .sb, .highlight .sc, .highlight .sd, .highlight .s2, .highlight .sh, .highlight .sx, .highlight .s1 {
-  color: #90a959;
+  color: #999999;
 }
 .highlight .sr {
-  color: #75b5aa;
+  color: #f6aa11;
 }
-.highlight .si {
-  color: #8f5536;
+.highlight .go {
+  color: #888888;
 }
-.highlight .se {
-  color: #8f5536;
+.highlight .gp {
+  color: #555555;
 }
-.highlight .nn {
-  color: #f4bf75;
+.highlight .gs {
 }
-.highlight .nc {
-  color: #f4bf75;
+.highlight .gu {
+  color: #aaaaaa;
+}
+.highlight .nb {
+  color: #f6aa11;
+}
+.highlight .cm {
+  color: #75715e;
+}
+.highlight .cp {
+  color: #75715e;
+}
+.highlight .c1 {
+  color: #75715e;
+}
+.highlight .cs {
+  color: #75715e;
+}
+.highlight .c, .highlight .cd {
+  color: #75715e;
+}
+.highlight .err {
+  color: #960050;
+}
+.highlight .gr {
+  color: #960050;
+}
+.highlight .gt {
+  color: #960050;
+}
+.highlight .gd {
+  color: #49483e;
+}
+.highlight .gi {
+  color: #49483e;
+}
+.highlight .ge {
+  color: #49483e;
+}
+.highlight .kc {
+  color: #66d9ef;
+}
+.highlight .kd {
+  color: #66d9ef;
+}
+.highlight .kr {
+  color: #66d9ef;
 }
 .highlight .no {
-  color: #f4bf75;
+  color: #66d9ef;
 }
-.highlight .na {
-  color: #6a9fb5;
+.highlight .kt {
+  color: #66d9ef;
 }
-.highlight .m, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .il, .highlight .mo, .highlight .mb, .highlight .mx {
-  color: #90a959;
+.highlight .mf {
+  color: #ae81ff;
+}
+.highlight .mh {
+  color: #ae81ff;
+}
+.highlight .il {
+  color: #ae81ff;
+}
+.highlight .mi {
+  color: #ae81ff;
+}
+.highlight .mo {
+  color: #ae81ff;
+}
+.highlight .m, .highlight .mb, .highlight .mx {
+  color: #ae81ff;
+}
+.highlight .sc {
+  color: #ae81ff;
+}
+.highlight .se {
+  color: #ae81ff;
 }
 .highlight .ss {
-  color: #90a959;
+  color: #ae81ff;
+}
+.highlight .sd {
+  color: #e6db74;
+}
+.highlight .s2 {
+  color: #e6db74;
+}
+.highlight .sb {
+  color: #e6db74;
+}
+.highlight .sh {
+  color: #e6db74;
+}
+.highlight .si {
+  color: #e6db74;
+}
+.highlight .sx {
+  color: #e6db74;
+}
+.highlight .s1 {
+  color: #e6db74;
+}
+.highlight .s {
+  color: #e6db74;
+}
+.highlight .na {
+  color: #a6e22e;
+}
+.highlight .nc {
+  color: #a6e22e;
+}
+.highlight .nd {
+  color: #a6e22e;
+}
+.highlight .ne {
+  color: #a6e22e;
+}
+.highlight .nf {
+  color: #a6e22e;
+}
+.highlight .vc {
+  color: #ffffff;
+}
+.highlight .nn {
+  color: #ffffff;
+}
+.highlight .nl {
+  color: #ffffff;
+}
+.highlight .ni {
+  color: #ffffff;
+}
+.highlight .bp {
+  color: #ffffff;
+}
+.highlight .vg {
+  color: #ffffff;
+}
+.highlight .vi {
+  color: #ffffff;
+}
+.highlight .nv {
+  color: #ffffff;
+}
+.highlight .w {
+  color: #ffffff;
+}
+.highlight {
+  color: #ffffff;
+}
+.highlight .n, .highlight .py, .highlight .nx {
+  color: #ffffff;
+}
+.highlight .ow {
+  color: #f92672;
+}
+.highlight .nt {
+  color: #f92672;
+}
+.highlight .k, .highlight .kv {
+  color: #f92672;
+}
+.highlight .kn {
+  color: #f92672;
+}
+.highlight .kp {
+  color: #f92672;
+}
+.highlight .o {
+  color: #f92672;
 }
     </style>
     <link href="stylesheets/screen.css" rel="stylesheet" media="screen" />
@@ -97,11 +206,11 @@
     <a href="#" id="nav-button">
       <span>
         NAV
-        <img src="images/navbar.png" />
+        <img src="images/navbar.png" alt="Navbar" />
       </span>
     </a>
     <div class="tocify-wrapper">
-      <img src="images/logo.png" />
+      <img src="images/logo.png" alt="Logo" />
         <div class="lang-selector">
               <a href="#" data-language-name="shell">shell</a>
         </div>
@@ -112,8 +221,8 @@
       <div id="toc">
       </div>
         <ul class="toc-footer">
-            <li><a href='mailto:aeonlucid@outlook.com'>Request an API key</a></li>
-            <li><a href='https://github.com/RocketLeagueStats/ApiDocumentation'>Documentation Source</a></li>
+            <li><a href='https://developers.rocketleaguestats.com'>Request an API key</a></li>
+            <li><a href='https://github.com/RocketLeagueStats/rls-api-documentation'>Documentation Source</a></li>
         </ul>
     </div>
     <div class="page-wrapper">
@@ -123,48 +232,37 @@
 
 <p>Welcome to the RocketLeagueStats API Documentation.</p>
 
-<p>You may use this API to create applications that require Rocket League data once you have obtained an API key.</p>
+<p>You may use this API to create applications that require Rocket League data once you have obtained an API key. We are working on official RLS libraries to consume the HTTP API. </p>
 
-<p>We are working on official RLS libraries to access this API, and you are allowed to contribute.</p>
+<p>All libraries can be found <a href="#libraries">here</a>.</p>
 
-<p>All official libraries can be found <a href="#libraries">here</a>.</p>
-
-<p>If you are working on an unofficial library, please let us know and we will make sure to list it in the documentation.</p>
-
-<p>You may also add them yourself by creating a pull request.</p>
+<p>If you are working on an unofficial library, please let us know and we will make sure to list it in the documentation. (You may also add them yourself by creating a pull request.)</p>
 
 <aside class="notice">
-It is not possible to register for an API key yet, you&rsquo;ll have to ask for one manually.<br>
-There will be a developers portal available really soon.<br>
-You can find ways to contact me <a href='https://rocketleaguestats.com/contact'>here</a>.
+You need to have an API key to use this API.<br>
+Click <a href='https://developers.rocketleaguestats.com'>here</a> to request a key, you can get started within 5 minutes.
 </aside>
 
 <h2 id="api-versioning">API Versioning</h2>
 
 <p>We use API versioning to make sure that we don&rsquo;t break applications.</p>
 
-<p>There is just one API version at the moment, but <code class="prettyprint">v2</code> may appear in the future when needed for experimental use.</p>
+<p>There is just one API version at the moment, but <code class="prettyprint">v2</code> may appear in the future when needed for breaking changes.</p>
 
 <h2 id="api-v1">API v1</h2>
 
-<p>This API version will only receive backwards compatible updates based on feedback.</p>
-
-<p>Like:</p>
-
-<ul>
-<li>A new endpoint</li>
-<li>A new query parameter with a default option or optional</li>
-<li>Performance improvements</li>
-</ul>
+<p>This API version will only receive backwards compatible updates based on feedback, such as:
+  * A new endpoint.
+  * A new query parameter with a default option or optional.
+  * Performance improvements.</p>
 
           <h1 id="libraries">Libraries</h1>
 
-<p>Official libraries are still being worked on.</p>
-
-<p>These are available right now but may not be ready for use yet. Please contribute if possible.</p>
+<p>These are official libraries provided by the developer of RocketLeagueStats.</p>
 
 <ul>
-<li><a href="https://github.com/RocketLeagueStats/rls-api-lib-nodejs">NodeJS</a></li>
+<li><a href="https://github.com/RocketLeagueStats/rls-api-csharp">CSharp</a></li>
+<li><a href="https://github.com/RocketLeagueStats/rls-api-nodejs">NodeJS</a></li>
 </ul>
 
 <h2 id="unofficial-libraries">Unofficial Libraries</h2>
@@ -176,19 +274,18 @@ You can find ways to contact me <a href='https://rocketleaguestats.com/contact'>
 <blockquote>
 <p>To authorize, use this code:</p>
 </blockquote>
-<pre class="highlight shell"><code><span class="c"># With shell, you can just pass the correct header with each request</span>
-curl <span class="s2">"api_endpoint_here"</span> -H <span class="s2">"Authorization: Bearer api_key"</span>
+<pre class="highlight shell tab-shell"><code><span class="c"># With shell, you can just pass the correct header with each request</span>
+curl <span class="s2">"api_endpoint_here"</span> -H <span class="s2">"Authorization: api_key"</span>
 </code></pre>
-
 <blockquote>
 <p>Make sure to replace <code class="prettyprint">api_key</code> with your API key.</p>
 </blockquote>
 
-<p>We use API keys to allow access to the API. You can register for an API key at out <a href="https://developers.rocketleaguestats.com">developers</a> website.</p>
+<p>We use API keys to allow access to the API. You can register for an API key at our <a href="https://developers.rocketleaguestats.com">developers</a> website.</p>
 
 <p>The API expects an API key in all requests. If not included the API will respond with a <strong>401 Unauthorized</strong> error.</p>
 
-<p><code class="prettyprint">Authorization: Bearer api_key</code></p>
+<p><code class="prettyprint">Authorization: api_key</code></p>
 
 <aside class="notice">
 You must replace <code>api_key</code> with your personal API key.
@@ -199,25 +296,23 @@ You must replace <code>api_key</code> with your personal API key.
 <p>These calls should be used to get specific data which you should then store for later use.</p>
 
 <h2 id="platforms">Platforms</h2>
-<pre class="highlight shell"><code>curl <span class="s2">"https://api.rocketleaguestats.com/v1/data/platforms"</span> <span class="se">\</span>
-  -H <span class="s2">"Authorization: Bearer api_key"</span>
-</code></pre>
-<pre class="highlight json"><code><span class="p">[</span><span class="w">
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.rocketleaguestats.com/v1/data/platforms"</span> <span class="se">\</span>
+  -H <span class="s2">"Authorization: api_key"</span>
+</code></pre><pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
   </span><span class="p">{</span><span class="w">
-    </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Steam"</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Steam"</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="p">{</span><span class="w">
-    </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"PS4"</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"PS4"</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="p">{</span><span class="w">
-    </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"XboxOne"</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"XboxOne"</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">]</span><span class="w">
 </span></code></pre>
-
 <p>This endpoint retrieves platform data.</p>
 
 <h3 id="http-request">HTTP Request</h3>
@@ -225,23 +320,21 @@ You must replace <code>api_key</code> with your personal API key.
 <p><code class="prettyprint">GET https://api.rocketleaguestats.com/v1/data/platforms</code></p>
 
 <h2 id="seasons">Seasons</h2>
-<pre class="highlight shell"><code>curl <span class="s2">"https://api.rocketleaguestats.com/v1/data/seasons"</span> <span class="se">\</span>
-  -H <span class="s2">"Authorization: Bearer api_key"</span>
-</code></pre>
-<pre class="highlight json"><code><span class="p">[</span><span class="w">
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.rocketleaguestats.com/v1/data/seasons"</span> <span class="se">\</span>
+  -H <span class="s2">"Authorization: api_key"</span>
+</code></pre><pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
   </span><span class="p">{</span><span class="w">
-    </span><span class="nt">"seasonId"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"startedOn"</span><span class="p">:</span><span class="w"> </span><span class="mi">1441836000</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"endedOn"</span><span class="p">:</span><span class="w"> </span><span class="mi">1455058800</span><span class="w">
+    </span><span class="s2">"seasonId"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"startedOn"</span><span class="p">:</span><span class="w"> </span><span class="mi">1441836000</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"endedOn"</span><span class="p">:</span><span class="w"> </span><span class="mi">1455058800</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="p">{</span><span class="w">
-    </span><span class="nt">"seasonId"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"startedOn"</span><span class="p">:</span><span class="w"> </span><span class="mi">1455058800</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"endedOn"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+    </span><span class="s2">"seasonId"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"startedOn"</span><span class="p">:</span><span class="w"> </span><span class="mi">1455058800</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"endedOn"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">]</span><span class="w">
 </span></code></pre>
-
 <p>This endpoint retrieves season data.</p>
 
 <p>The <code class="prettyprint">endedOn</code> property is <code class="prettyprint">null</code> when a season hasn&rsquo;t ended yet.</p>
@@ -251,30 +344,28 @@ You must replace <code>api_key</code> with your personal API key.
 <p><code class="prettyprint">GET https://api.rocketleaguestats.com/v1/data/seasons</code></p>
 
 <h2 id="playlists">Playlists</h2>
-<pre class="highlight shell"><code>curl <span class="s2">"https://api.rocketleaguestats.com/v1/data/playlists"</span> <span class="se">\</span>
-  -H <span class="s2">"Authorization: Bearer api_key"</span>
-</code></pre>
-<pre class="highlight json"><code><span class="p">[</span><span class="w">
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.rocketleaguestats.com/v1/data/playlists"</span> <span class="se">\</span>
+  -H <span class="s2">"Authorization: api_key"</span>
+</code></pre><pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
   </span><span class="p">{</span><span class="w">
-    </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Duel"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"population"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-      </span><span class="nt">"players"</span><span class="p">:</span><span class="w"> </span><span class="mi">929</span><span class="p">,</span><span class="w">
-      </span><span class="nt">"updatedAt"</span><span class="p">:</span><span class="w"> </span><span class="mi">1458929400</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Duel"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"population"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"players"</span><span class="p">:</span><span class="w"> </span><span class="mi">929</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"updatedAt"</span><span class="p">:</span><span class="w"> </span><span class="mi">1458929400</span><span class="w">
     </span><span class="p">}</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="p">{</span><span class="w">
-    </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Doubles"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"population"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-      </span><span class="nt">"players"</span><span class="p">:</span><span class="w"> </span><span class="mi">7916</span><span class="p">,</span><span class="w">
-      </span><span class="nt">"updatedAt"</span><span class="p">:</span><span class="w"> </span><span class="mi">1458929400</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Doubles"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"population"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"players"</span><span class="p">:</span><span class="w"> </span><span class="mi">7916</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"updatedAt"</span><span class="p">:</span><span class="w"> </span><span class="mi">1458929400</span><span class="w">
     </span><span class="p">}</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="err">etc..</span><span class="w">
 </span><span class="p">]</span><span class="w">
 </span></code></pre>
-
 <p>This endpoint retrieves playlist data.</p>
 
 <p>At the moment only returns the following playlists:</p>
@@ -290,6 +381,9 @@ You must replace <code>api_key</code> with your personal API key.
 <li>Ranked Standard</li>
 <li>Snow Day</li>
 <li>Rocket Labs</li>
+<li>Hoops</li>
+<li>Rumble</li>
+<li>Dropshot</li>
 </ul>
 
 <h3 id="http-request">HTTP Request</h3>
@@ -297,25 +391,23 @@ You must replace <code>api_key</code> with your personal API key.
 <p><code class="prettyprint">GET https://api.rocketleaguestats.com/v1/data/playlists</code></p>
 
 <h2 id="tiers">Tiers</h2>
-<pre class="highlight shell"><code>curl <span class="s2">"https://api.rocketleaguestats.com/v1/data/tiers"</span> <span class="se">\</span>
-  -H <span class="s2">"Authorization: Bearer api_key"</span>
-</code></pre>
-<pre class="highlight json"><code><span class="p">[</span><span class="w">
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.rocketleaguestats.com/v1/data/tiers"</span> <span class="se">\</span>
+  -H <span class="s2">"Authorization: api_key"</span>
+</code></pre><pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
   </span><span class="p">{</span><span class="w">
-    </span><span class="nt">"tierId"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"tierName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Unranked"</span><span class="w">
+    </span><span class="s2">"tierId"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"tierName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Unranked"</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="p">{</span><span class="w">
-    </span><span class="nt">"tierId"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"tierName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Prospect I"</span><span class="w">
+    </span><span class="s2">"tierId"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"tierName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Prospect I"</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="err">etc..</span><span class="w">
 </span><span class="p">]</span><span class="w">
 </span></code></pre>
-
 <p>This endpoint retrieves tier data.</p>
 
-<p>Returns all season 2 tiers.</p>
+<p>Returns all season 5 tiers.</p>
 
 <h3 id="http-request">HTTP Request</h3>
 
@@ -329,7 +421,7 @@ You must replace <code>api_key</code> with your personal API key.
 
 <p>The <code class="prettyprint">rankedSeasons</code> field works like this: <code class="prettyprint">rankedSeasons.seasonId.playlistId</code></p>
 
-<p>If a particular <code class="prettyprint">seasonId</code> does not exist, that means the player hasn&rsquo;t participated yet.</p>
+<p>If a particular <code class="prettyprint">seasonId</code> does not exist, that means the player hasn&rsquo;t participated in that season yet.</p>
 
 <table><thead>
 <tr>
@@ -338,11 +430,11 @@ You must replace <code>api_key</code> with your personal API key.
 </tr>
 </thead><tbody>
 <tr>
-<td>rankedSeasons&gt;tier</td>
+<td>rankedSeasons.tier</td>
 <td>Tier name can be found in the <a href="#tiers">tier data call</a>.</td>
 </tr>
 <tr>
-<td>rankedSeasons&gt;division</td>
+<td>rankedSeasons.division</td>
 <td>Division is 0 when tier is also 0 (Unranked).</td>
 </tr>
 </tbody></table>
@@ -357,22 +449,22 @@ You must replace <code>api_key</code> with your personal API key.
 </thead><tbody>
 <tr>
 <td>avatar</td>
-<td>An avatar could not be found for this user. Always for PS4 users and when Steam gives an invalid response to us, this is mostly fixed in the next platform-specific update.</td>
+<td>An avatar could not be found for this user.</td>
 </tr>
 <tr>
-<td>rankedSeasons&gt;rankPoints</td>
+<td>rankedSeasons.rankPoints</td>
 <td>Not played in this specific playlist.</td>
 </tr>
 <tr>
-<td>rankedSeasons&gt;matchesPlayed</td>
+<td>rankedSeasons.matchesPlayed</td>
 <td>Not played in this specific playlist.</td>
 </tr>
 <tr>
-<td>rankedSeasons&gt;tier</td>
+<td>rankedSeasons.tier</td>
 <td>Not played in this specific playlist.</td>
 </tr>
 <tr>
-<td>rankedSeasons&gt;division</td>
+<td>rankedSeasons.division</td>
 <td>Not played in this specific playlist.</td>
 </tr>
 <tr>
@@ -382,77 +474,74 @@ You must replace <code>api_key</code> with your personal API key.
 </tbody></table>
 
 <h2 id="single-player">Single Player</h2>
-<pre class="highlight shell"><code>curl <span class="s2">"https://api.rocketleaguestats.com/v1/player?unique_id=76561198033338223&amp;platform_id=1"</span> <span class="se">\</span>
-  -H <span class="s2">"Authorization: Bearer api_key"</span>
-</code></pre>
-<pre class="highlight json"><code><span class="p">{</span><span class="w">
-  </span><span class="nt">"uniqueId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"76561198033338223"</span><span class="p">,</span><span class="w">
-  </span><span class="nt">"displayName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Mike ' AeonLucid"</span><span class="p">,</span><span class="w">
-  </span><span class="nt">"platform"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Steam"</span><span class="w">
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.rocketleaguestats.com/v1/player?unique_id=76561198033338223&amp;platform_id=1"</span> <span class="se">\</span>
+  -H <span class="s2">"Authorization: api_key"</span>
+</code></pre><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"uniqueId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"76561198033338223"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"displayName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Mike ' AeonLucid"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"platform"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Steam"</span><span class="w">
   </span><span class="p">},</span><span class="w">
-  </span><span class="nt">"avatar"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/56/560e94689827bbdba66d34511de14e2442a5a786_full.jpg"</span><span class="p">,</span><span class="w">
-  </span><span class="nt">"profileUrl"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://rocketleaguestats.com/profile/Steam/76561198033338223"</span><span class="p">,</span><span class="w">
-  </span><span class="nt">"signatureUrl"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://signature.rocketleaguestats.com/normal/Steam/76561198033338223.png"</span><span class="p">,</span><span class="w">
-  </span><span class="nt">"stats"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nt">"wins"</span><span class="p">:</span><span class="w"> </span><span class="mi">177</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"goals"</span><span class="p">:</span><span class="w"> </span><span class="mi">492</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"mvps"</span><span class="p">:</span><span class="w"> </span><span class="mi">70</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"saves"</span><span class="p">:</span><span class="w"> </span><span class="mi">252</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"shots"</span><span class="p">:</span><span class="w"> </span><span class="mi">1050</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"assists"</span><span class="p">:</span><span class="w"> </span><span class="mi">167</span><span class="w">
+  </span><span class="s2">"avatar"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/56/560e94689827bbdba66d34511de14e2442a5a786_full.jpg"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"profileUrl"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://rocketleaguestats.com/profile/Steam/76561198033338223"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"signatureUrl"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://signature.rocketleaguestats.com/normal/Steam/76561198033338223.png"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"stats"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"wins"</span><span class="p">:</span><span class="w"> </span><span class="mi">674</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"goals"</span><span class="p">:</span><span class="w"> </span><span class="mi">2215</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"mvps"</span><span class="p">:</span><span class="w"> </span><span class="mi">344</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"saves"</span><span class="p">:</span><span class="w"> </span><span class="mi">881</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"shots"</span><span class="p">:</span><span class="w"> </span><span class="mi">4339</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"assists"</span><span class="p">:</span><span class="w"> </span><span class="mi">607</span><span class="w">
   </span><span class="p">},</span><span class="w">
-  </span><span class="nt">"rankedSeasons"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nt">"1"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-      </span><span class="nt">"10"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-        </span><span class="nt">"rankPoints"</span><span class="p">:</span><span class="w"> </span><span class="mi">366</span><span class="w">
+  </span><span class="s2">"rankedSeasons"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"1"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"10"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"rankPoints"</span><span class="p">:</span><span class="w"> </span><span class="mi">366</span><span class="w">
       </span><span class="p">},</span><span class="w">
-      </span><span class="nt">"11"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-        </span><span class="nt">"rankPoints"</span><span class="p">:</span><span class="w"> </span><span class="mi">715</span><span class="w">
+      </span><span class="s2">"11"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"rankPoints"</span><span class="p">:</span><span class="w"> </span><span class="mi">715</span><span class="w">
       </span><span class="p">},</span><span class="w">
-      </span><span class="nt">"12"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-        </span><span class="nt">"rankPoints"</span><span class="p">:</span><span class="w"> </span><span class="mi">515</span><span class="w">
+      </span><span class="s2">"12"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"rankPoints"</span><span class="p">:</span><span class="w"> </span><span class="mi">515</span><span class="w">
       </span><span class="p">},</span><span class="w">
-      </span><span class="nt">"13"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-        </span><span class="nt">"rankPoints"</span><span class="p">:</span><span class="w"> </span><span class="mi">517</span><span class="w">
+      </span><span class="s2">"13"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"rankPoints"</span><span class="p">:</span><span class="w"> </span><span class="mi">517</span><span class="w">
       </span><span class="p">}</span><span class="w">
     </span><span class="p">},</span><span class="w">
-    </span><span class="nt">"2"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-      </span><span class="nt">"10"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-        </span><span class="nt">"rankPoints"</span><span class="p">:</span><span class="w"> </span><span class="mi">557</span><span class="p">,</span><span class="w">
-        </span><span class="nt">"matchesPlayed"</span><span class="p">:</span><span class="w"> </span><span class="mi">15</span><span class="p">,</span><span class="w">
-        </span><span class="nt">"tier"</span><span class="p">:</span><span class="w"> </span><span class="mi">6</span><span class="p">,</span><span class="w">
-        </span><span class="nt">"division"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w">
+    </span><span class="s2">"5"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"10"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"rankPoints"</span><span class="p">:</span><span class="w"> </span><span class="mi">706</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"matchesPlayed"</span><span class="p">:</span><span class="w"> </span><span class="mi">27</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"tier"</span><span class="p">:</span><span class="w"> </span><span class="mi">8</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"division"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="w">
       </span><span class="p">},</span><span class="w">
-      </span><span class="nt">"11"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-        </span><span class="nt">"rankPoints"</span><span class="p">:</span><span class="w"> </span><span class="mi">744</span><span class="p">,</span><span class="w">
-        </span><span class="nt">"matchesPlayed"</span><span class="p">:</span><span class="w"> </span><span class="mi">137</span><span class="p">,</span><span class="w">
-        </span><span class="nt">"tier"</span><span class="p">:</span><span class="w"> </span><span class="mi">8</span><span class="p">,</span><span class="w">
-        </span><span class="nt">"division"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w">
+      </span><span class="s2">"11"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"rankPoints"</span><span class="p">:</span><span class="w"> </span><span class="mi">809</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"matchesPlayed"</span><span class="p">:</span><span class="w"> </span><span class="mi">17</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"tier"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"division"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w">
       </span><span class="p">},</span><span class="w">
-      </span><span class="nt">"12"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-        </span><span class="nt">"rankPoints"</span><span class="p">:</span><span class="w"> </span><span class="mi">708</span><span class="p">,</span><span class="w">
-        </span><span class="nt">"matchesPlayed"</span><span class="p">:</span><span class="w"> </span><span class="mi">44</span><span class="p">,</span><span class="w">
-        </span><span class="nt">"tier"</span><span class="p">:</span><span class="w"> </span><span class="mi">7</span><span class="p">,</span><span class="w">
-        </span><span class="nt">"division"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="w">
+      </span><span class="s2">"12"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"rankPoints"</span><span class="p">:</span><span class="w"> </span><span class="mi">557</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"matchesPlayed"</span><span class="p">:</span><span class="w"> </span><span class="mi">12</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"tier"</span><span class="p">:</span><span class="w"> </span><span class="mi">6</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"division"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w">
       </span><span class="p">},</span><span class="w">
-      </span><span class="nt">"13"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-        </span><span class="nt">"rankPoints"</span><span class="p">:</span><span class="w"> </span><span class="mi">660</span><span class="p">,</span><span class="w">
-        </span><span class="nt">"matchesPlayed"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w">
-        </span><span class="nt">"tier"</span><span class="p">:</span><span class="w"> </span><span class="mi">7</span><span class="p">,</span><span class="w">
-        </span><span class="nt">"division"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w">
+      </span><span class="s2">"13"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"rankPoints"</span><span class="p">:</span><span class="w"> </span><span class="mi">776</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"matchesPlayed"</span><span class="p">:</span><span class="w"> </span><span class="mi">39</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"tier"</span><span class="p">:</span><span class="w"> </span><span class="mi">9</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"division"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="w">
       </span><span class="p">}</span><span class="w">
     </span><span class="p">}</span><span class="w">
   </span><span class="p">},</span><span class="w">
-  </span><span class="nt">"lastRequested"</span><span class="p">:</span><span class="w"> </span><span class="mi">1459095218</span><span class="p">,</span><span class="w">
-  </span><span class="nt">"createdAt"</span><span class="p">:</span><span class="w"> </span><span class="mi">1456424665</span><span class="p">,</span><span class="w">
-  </span><span class="nt">"updatedAt"</span><span class="p">:</span><span class="w"> </span><span class="mi">1459093964</span><span class="p">,</span><span class="w">
-  </span><span class="nt">"nextUpdateAt"</span><span class="p">:</span><span class="w"> </span><span class="mi">1459097564</span><span class="p">,</span><span class="w">
-  </span><span class="nt">"updatedInfoAt"</span><span class="p">:</span><span class="w"> </span><span class="mi">1459061514</span><span class="w">
+  </span><span class="s2">"lastRequested"</span><span class="p">:</span><span class="w"> </span><span class="mi">1500170066</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"createdAt"</span><span class="p">:</span><span class="w"> </span><span class="mi">1456424665</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"updatedAt"</span><span class="p">:</span><span class="w"> </span><span class="mi">1500170054</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"nextUpdateAt"</span><span class="p">:</span><span class="w"> </span><span class="mi">1500170234</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
-
 <p>This endpoint retrieves a single player. If it does not exist in our database, we will check if the player exist at Rocket League. If the Rocket League player does not exist we will return a 404 response.</p>
 
 <p>A player exists will only be stored when he has one or more goals. This is our only way to check if a player is an actual player at the moment.</p>
@@ -494,16 +583,15 @@ Did you know that <code>xuid</code> stands for <strong>Xbox User ID</strong>?
 <h2 id="batch-players">Batch Players</h2>
 
 <blockquote>
-<p>This call works a bit different, you need to send a <code class="prettyprint">POST</code> request with the header <code class="prettyprint">Authorization: Bearer api_key</code>. Put the following in the body.</p>
+<p>This call works a bit different, you need to send a <code class="prettyprint">POST</code> request with the header <code class="prettyprint">Authorization: api_key</code>. Put the following in the body.</p>
 </blockquote>
-<pre class="highlight json"><code><span class="p">[</span><span class="w">
-    </span><span class="p">{</span><span class="nt">"platformId"</span><span class="p">:</span><span class="s2">"1"</span><span class="p">,</span><span class="w"> </span><span class="nt">"uniqueId"</span><span class="p">:</span><span class="s2">"76561198033338223"</span><span class="p">},</span><span class="w">
-    </span><span class="p">{</span><span class="nt">"platformId"</span><span class="p">:</span><span class="s2">"1"</span><span class="p">,</span><span class="w"> </span><span class="nt">"uniqueId"</span><span class="p">:</span><span class="s2">"76561197981122126"</span><span class="p">},</span><span class="w">
-    </span><span class="p">{</span><span class="nt">"platformId"</span><span class="p">:</span><span class="s2">"3"</span><span class="p">,</span><span class="w"> </span><span class="nt">"uniqueId"</span><span class="p">:</span><span class="s2">"Loubleezy"</span><span class="p">},</span><span class="w">
-    </span><span class="p">{</span><span class="nt">"platformId"</span><span class="p">:</span><span class="s2">"2"</span><span class="p">,</span><span class="w"> </span><span class="nt">"uniqueId"</span><span class="p">:</span><span class="s2">"Wizwonk"</span><span class="p">}</span><span class="w">
+<pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="s2">"platformId"</span><span class="p">:</span><span class="s2">"1"</span><span class="p">,</span><span class="w"> </span><span class="s2">"uniqueId"</span><span class="p">:</span><span class="s2">"76561198033338223"</span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="s2">"platformId"</span><span class="p">:</span><span class="s2">"1"</span><span class="p">,</span><span class="w"> </span><span class="s2">"uniqueId"</span><span class="p">:</span><span class="s2">"76561197981122126"</span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="s2">"platformId"</span><span class="p">:</span><span class="s2">"3"</span><span class="p">,</span><span class="w"> </span><span class="s2">"uniqueId"</span><span class="p">:</span><span class="s2">"Loubleezy"</span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="s2">"platformId"</span><span class="p">:</span><span class="s2">"2"</span><span class="p">,</span><span class="w"> </span><span class="s2">"uniqueId"</span><span class="p">:</span><span class="s2">"Wizwonk"</span><span class="p">}</span><span class="w">
 </span><span class="p">]</span><span class="w">
 </span></code></pre>
-
 <blockquote>
 <p>The response is a json array of all found players using the <a href="#single-player">player</a> object.</p>
 </blockquote>
@@ -533,24 +621,22 @@ Did you know that <code>xuid</code> stands for <strong>Xbox User ID</strong>?
 </tbody></table>
 
 <h2 id="search-players">Search Players</h2>
-<pre class="highlight shell"><code>curl <span class="s2">"https://api.rocketleaguestats.com/v1/search/players?display_name=Mike"</span> <span class="se">\</span>
-  -H <span class="s2">"Authorization: Bearer api_key"</span>
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.rocketleaguestats.com/v1/search/players?display_name=Mike"</span> <span class="se">\</span>
+  -H <span class="s2">"Authorization: api_key"</span>
 </code></pre>
-
 <blockquote>
 <p>The <code class="prettyprint">data</code> field contains an array of <a href="#single-player">player</a> objects.</p>
 </blockquote>
-<pre class="highlight json"><code><span class="p">{</span><span class="w">
-  </span><span class="nt">"page"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
-  </span><span class="nt">"results"</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="p">,</span><span class="w">
-  </span><span class="nt">"totalResults"</span><span class="p">:</span><span class="w"> </span><span class="mi">91</span><span class="p">,</span><span class="w">
-  </span><span class="nt">"maxResultsPerPage"</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="p">,</span><span class="w">
-  </span><span class="nt">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"page"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"results"</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"totalResults"</span><span class="p">:</span><span class="w"> </span><span class="mi">91</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"maxResultsPerPage"</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
 
   </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
-
 <p>This endpoint retrieves multiple players. It will only search for players in our database, not all rocket league players.</p>
 
 <h3 id="http-request">HTTP Request</h3>
@@ -583,11 +669,10 @@ Did you know that <code>xuid</code> stands for <strong>Xbox User ID</strong>?
 <p>Leaderboards are cached on the server for 15 minutes to increase overall performance.</p>
 
 <h2 id="ranked-leaderboard">Ranked Leaderboard</h2>
-<pre class="highlight shell"><code>curl <span class="s2">"https://api.rocketleaguestats.com/v1/leaderboard/ranked?playlist_id=10"</span> <span class="se">\</span>
-  -H <span class="s2">"Authorization: Bearer api_key"</span>
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.rocketleaguestats.com/v1/leaderboard/ranked?playlist_id=10"</span> <span class="se">\</span>
+  -H <span class="s2">"Authorization: api_key"</span>
 </code></pre>
-
-<p>Retrieves an array of 100 players sorted by their season 2 rank points.</p>
+<p>Retrieves an array of 100 players sorted by their season 5 rating.</p>
 
 <h3 id="http-request">HTTP Request</h3>
 
@@ -608,10 +693,9 @@ Did you know that <code>xuid</code> stands for <strong>Xbox User ID</strong>?
 </tbody></table>
 
 <h2 id="stat-leaderboard">Stat Leaderboard</h2>
-<pre class="highlight shell"><code>curl <span class="s2">"https://api.rocketleaguestats.com/v1/leaderboard/stat?type=wins"</span> <span class="se">\</span>
-  -H <span class="s2">"Authorization: Bearer api_key"</span>
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.rocketleaguestats.com/v1/leaderboard/stat?type=wins"</span> <span class="se">\</span>
+  -H <span class="s2">"Authorization: api_key"</span>
 </code></pre>
-
 <p>Retrieves an array of 100 players sorted by their specified stat amount.</p>
 
 <h3 id="http-request">HTTP Request</h3>
@@ -637,12 +721,11 @@ Did you know that <code>xuid</code> stands for <strong>Xbox User ID</strong>?
 <blockquote>
 <p>Example of an error response.</p>
 </blockquote>
-<pre class="highlight json"><code><span class="p">{</span><span class="w">
-  </span><span class="nt">"code"</span><span class="p">:</span><span class="w"> </span><span class="mi">404</span><span class="p">,</span><span class="w">
-  </span><span class="nt">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Sorry, we can't find the specified player."</span><span class="w">
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="mi">404</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Sorry, we can't find the specified player."</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
-
 <p>The error code will be the same as the status in the response header.</p>
 
 <p>The RocketLeagueStats API uses the following error codes:</p>
@@ -655,27 +738,31 @@ Did you know that <code>xuid</code> stands for <strong>Xbox User ID</strong>?
 </thead><tbody>
 <tr>
 <td>200</td>
-<td>Success &ndash; You got the response you asked for</td>
+<td>Success &ndash; You got the response you asked for.</td>
 </tr>
 <tr>
 <td>400</td>
-<td>Bad Request &ndash; Your request seems to be invalid</td>
+<td>Bad Request &ndash; Your request seems to be invalid.</td>
 </tr>
 <tr>
 <td>401</td>
-<td>Unauthorized &ndash; Your API key is wrong</td>
+<td>Unauthorized &ndash; Your API key is wrong.</td>
 </tr>
 <tr>
 <td>404</td>
-<td>Not Found &ndash; We couldn&rsquo;t find what you were looking for</td>
+<td>Not Found &ndash; We couldn&rsquo;t find what you were looking for.</td>
 </tr>
 <tr>
 <td>405</td>
-<td>Method Not Allowed &ndash; You tried to to access something with an invalid method</td>
+<td>Method Not Allowed &ndash; You tried to to access something with an invalid method.</td>
 </tr>
 <tr>
 <td>406</td>
-<td>Not Acceptable &ndash; You requested a format that isn&rsquo;t json</td>
+<td>Not Acceptable &ndash; You requested a format that isn&rsquo;t json.</td>
+</tr>
+<tr>
+<td>429</td>
+<td>Too Many Requests &ndash; You are being rate limited, slow down or <a href="https://rocketleaguestats.com/contact">request</a> a higher rate limit.</td>
 </tr>
 <tr>
 <td>500</td>
