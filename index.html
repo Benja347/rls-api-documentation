@@ -232,11 +232,12 @@
 
 <p>Welcome to the RocketLeagueStats API Documentation.</p>
 
-<p>You may use this API to create applications that require Rocket League data once you have obtained an API key. We are working on official RLS libraries to consume the HTTP API. </p>
+<p>You may use this API to create applications that require Rocket League data once you have obtained an API key. We are working on official RLS libraries to consume the HTTP API.</p>
 
 <p>All libraries can be found <a href="#libraries">here</a>.</p>
 
-<p>If you are working on an unofficial library, please let us know and we will make sure to list it in the documentation. (You may also add them yourself by creating a pull request.)</p>
+<p>If you are working on an unofficial library, please let us know and we will make sure to list it in the documentation.
+You may also add them yourself by creating a pull request to this <a href="https://github.com/RocketLeagueStats/rls-api-documentation">repository</a>.</p>
 
 <aside class="notice">
 You need to have an API key to use this API.<br>
@@ -261,34 +262,41 @@ Click <a href='https://developers.rocketleaguestats.com'>here</a> to request a k
 <p>These are official libraries provided by the developer of RocketLeagueStats.</p>
 
 <ul>
-<li><a href="https://github.com/RocketLeagueStats/rls-api-csharp">CSharp</a></li>
+<li><a href="https://github.com/RocketLeagueStats/rls-api-csharp">C#</a></li>
 <li><a href="https://github.com/RocketLeagueStats/rls-api-nodejs">NodeJS</a></li>
 </ul>
 
 <h2 id="unofficial-libraries">Unofficial Libraries</h2>
 
-<p>None yet. You can be the first. :)</p>
+<p>These are libraries created by awesome people. :)</p>
+
+<ul>
+<li>Java - <a href="https://github.com/567legodude/RLStatsJava">RLStatsJava</a></li>
+<li>Python - <a href="http://rocket-snake.readthedocs.io/en/latest/">Rocket Snake</a></li>
+</ul>
 
           <h1 id="authentication">Authentication</h1>
 
 <blockquote>
 <p>To authorize, use this code:</p>
 </blockquote>
-<pre class="highlight shell tab-shell"><code><span class="c"># With shell, you can just pass the correct header with each request</span>
-curl <span class="s2">"api_endpoint_here"</span> -H <span class="s2">"Authorization: api_key"</span>
+<pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.rocketleaguestats.com/v1/data/platforms"</span> -H <span class="s2">"Authorization: &lt;api_key&gt;"</span>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://api.rocketleaguestats.com/v1/data/platforms?apikey=&lt;api_key&gt;"</span>
 </code></pre>
 <blockquote>
-<p>Make sure to replace <code class="prettyprint">api_key</code> with your API key.</p>
+<p>Make sure to replace <code class="prettyprint">api_key</code> with your API key and not include &lt;&gt;.</p>
 </blockquote>
 
 <p>We use API keys to allow access to the API. You can register for an API key at our <a href="https://developers.rocketleaguestats.com">developers</a> website.</p>
 
 <p>The API expects an API key in all requests. If not included the API will respond with a <strong>401 Unauthorized</strong> error.</p>
 
-<p><code class="prettyprint">Authorization: api_key</code></p>
+<p>We accept an API key either through the &ldquo;Authorization&rdquo; header or &ldquo;apikey&rdquo; GET query. Please use the header if it is possible to do so.</p>
+
+<p><code class="prettyprint">Authorization: &lt;api_key&gt;</code> or <code class="prettyprint">&lt;request&gt;?apikey=&lt;api_key&gt;</code></p>
 
 <aside class="notice">
-You must replace <code>api_key</code> with your personal API key.
+You must replace <code>&lt;api_key&gt;</code> with your personal API key.
 </aside>
 
           <h1 id="data">Data</h1>
@@ -348,22 +356,33 @@ You must replace <code>api_key</code> with your personal API key.
   -H <span class="s2">"Authorization: api_key"</span>
 </code></pre><pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
   </span><span class="p">{</span><span class="w">
-    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Duel"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"platformId"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Ranked Duel"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"population"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-      </span><span class="s2">"players"</span><span class="p">:</span><span class="w"> </span><span class="mi">929</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"updatedAt"</span><span class="p">:</span><span class="w"> </span><span class="mi">1458929400</span><span class="w">
+      </span><span class="s2">"players"</span><span class="p">:</span><span class="w"> </span><span class="mi">921</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"updatedAt"</span><span class="p">:</span><span class="w"> </span><span class="mi">1500681994</span><span class="w">
     </span><span class="p">}</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="p">{</span><span class="w">
-    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Doubles"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"platformId"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Ranked Duel"</span><span class="p">,</span><span class="w">
     </span><span class="s2">"population"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-      </span><span class="s2">"players"</span><span class="p">:</span><span class="w"> </span><span class="mi">7916</span><span class="p">,</span><span class="w">
-      </span><span class="s2">"updatedAt"</span><span class="p">:</span><span class="w"> </span><span class="mi">1458929400</span><span class="w">
+      </span><span class="s2">"players"</span><span class="p">:</span><span class="w"> </span><span class="mi">1314</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"updatedAt"</span><span class="p">:</span><span class="w"> </span><span class="mi">1500681994</span><span class="w">
     </span><span class="p">}</span><span class="w">
   </span><span class="p">},</span><span class="w">
-  </span><span class="err">etc..</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"platformId"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Ranked Duel"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"population"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"players"</span><span class="p">:</span><span class="w"> </span><span class="mi">844</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"updatedAt"</span><span class="p">:</span><span class="w"> </span><span class="mi">1500681994</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+  </span><span class="err">//</span><span class="w"> </span><span class="err">etc</span><span class="w">
 </span><span class="p">]</span><span class="w">
 </span></code></pre>
 <p>This endpoint retrieves playlist data.</p>
