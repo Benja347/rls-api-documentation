@@ -72,22 +72,33 @@ curl "https://api.rocketleaguestats.com/v1/data/playlists" \
 ```json
 [
   {
-    "id": 1,
-    "name": "Duel",
+    "id": 10,
+    "platformId": 1,
+    "name": "Ranked Duel",
     "population": {
-      "players": 929,
-      "updatedAt": 1458929400
+      "players": 921,
+      "updatedAt": 1500681994
     }
   },
   {
-    "id": 2,
-    "name": "Doubles",
+    "id": 10,
+    "platformId": 2,
+    "name": "Ranked Duel",
     "population": {
-      "players": 7916,
-      "updatedAt": 1458929400
+      "players": 1314,
+      "updatedAt": 1500681994
     }
   },
-  etc..
+  {
+    "id": 10,
+    "platformId": 3,
+    "name": "Ranked Duel",
+    "population": {
+      "players": 844,
+      "updatedAt": 1500681994
+    }
+  }
+  // etc
 ]
 ```
 

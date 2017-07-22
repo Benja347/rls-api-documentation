@@ -23,11 +23,12 @@ search: true
 
 Welcome to the RocketLeagueStats API Documentation.
 
-You may use this API to create applications that require Rocket League data once you have obtained an API key. We are working on official RLS libraries to consume the HTTP API. 
+You may use this API to create applications that require Rocket League data once you have obtained an API key. We are working on official RLS libraries to consume the HTTP API.
 
 All libraries can be found [here](#libraries).
 
-If you are working on an unofficial library, please let us know and we will make sure to list it in the documentation. (You may also add them yourself by creating a pull request.)
+If you are working on an unofficial library, please let us know and we will make sure to list it in the documentation.
+You may also add them yourself by creating a pull request to this [repository](https://github.com/RocketLeagueStats/rls-api-documentation).
 
 <aside class="notice">
 You need to have an API key to use this API.<br>

@@ -2,9 +2,12 @@
 
 These are official libraries provided by the developer of RocketLeagueStats.
 
- * [CSharp](https://github.com/RocketLeagueStats/rls-api-csharp)
+ * [C#](https://github.com/RocketLeagueStats/rls-api-csharp)
  * [NodeJS](https://github.com/RocketLeagueStats/rls-api-nodejs)
 
 ## Unofficial Libraries
 
-None yet. You can be the first. :)
+These are libraries created by awesome people. :)
+
+ * Java - [RLStatsJava](https://github.com/567legodude/RLStatsJava)
+ * Python - [Rocket Snake](http://rocket-snake.readthedocs.io/en/latest/)
